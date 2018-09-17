@@ -1,6 +1,7 @@
 body {
     margin: 0;
     color: teal;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*********** HEADER ************/
@@ -10,7 +11,9 @@ header {
     padding: 10px;
     background-color: teal;
     color: white;
+    font-family: 'Roboto Slab', serif;
 }
+
 
 h1 {
     margin: 0;
@@ -32,4 +35,14 @@ h1 {
 
 .list-title {
     margin-left: 20px;
+}
+
+header a {
+    color: gold;
+    text-decoration: none;
+}
+
+.list a {
+    color: teal;
+    text-decoration: none;
 }
