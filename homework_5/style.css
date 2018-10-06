@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: teal;
+}
+
+/*********** LAYOUT ************/
+
+#page-container {
+    position: relative;
+}
+
+#content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*********** IMAGES ************/
+
+#background-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+/*********** HEADER ************/
+
+header {
+    background-color: #55473A;
+    color: white;
+    padding: 12px;
+}
+
+header nav {
+    font: 24px 'Roboto', sans-serif;
+    text-align: right;
+    margin-top: 12px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a,
+.nav-item {
+    padding: 4px;
+}
+
+#title-accent,
+#current-page {
+    color: #DEBB5F;
+}
+
+header a:hover {
+    color: #B88F4D;
+}
+
+#title {
+    font: bold italic 64px Palatino, serif;
+    text-align: left;
+    margin-right: 12px;
+}
+
+#subtitle {
+    font: italic 28px Palatino, serif;
+    color: #B88F4D;
+}
