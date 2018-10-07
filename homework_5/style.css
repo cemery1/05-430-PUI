@@ -80,12 +80,17 @@ header a:hover {
     background-color: #E6E6E6;
 }
 
-#image-heading {
+#image-heading-container {
+    position: relative;
+    background-color: #E6E6E6;
     color: #B88F4D;
     font: bold italic 32px Palatino, serif;
-    padding: 40px;
-    padding-left: 24px;
-    background-color: blue;
+}
+
+#image-heading {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
 }
 
 .product-card {
@@ -127,6 +132,12 @@ header a:hover {
 .product-link {
     display: inline-block;
     width: 48%;
+}
+
+#browse-title {
+    position: absolute;
+    left: 24px;
+    top: 40%;
 }
 
 
