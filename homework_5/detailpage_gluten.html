@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bun Bun Bake Shop Homepage</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <span id="title">Bun <span id="title-accent">Bun</span> Bake Shop</span>
+            <span id="subtitle">"Best Buns in the 'Burgh"</span>
+            <nav>
+                <a href="homepage.html">Home</a> |
+                <a href="browsepage.html" id="current-page">Shop</a> |
+                <span class="nav-item">Cart</span> |
+                <span class="nav-item">About</span> |
+                <span class="nav-item">Contact</span>
+            </nav>
+        </header>
+        <div id="detailpage-container">
+            <div id="background-container">
+                <div id="image-heading-container">
+                    <img id="image-heading" src="images/browse_heading.jpg" />
+                    <div id="browse-title">Browse Our Buns</div>
+                </div>
+                <div id="browsebody-container">
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Original Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Pumpkin Spice Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Gluten-Free Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Walnut Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Blackberry Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="product-link">
+                        <div class="product-card disabled">
+                            <div class="product-image-container">
+                                <img id="product-image" src="images/buns.jpg" />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-name">Caramel Pecan Bun</div>
+                                <div class="product-description">Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="modal">
+                <div id="product-title">Gluten-Free Bun</div>
+                <div id="modal-content">
+                    <div id="modal-sidebar">
+                        <img id="modal-image" src="images/buns.jpg" />
+                        <div id="nutrition-facts">
+                            <div class="fact">
+                                <span class="value">150</span>
+                                <span class="category">cal</span>
+                            </div>
+                            <div class="fact">
+                                <span class="value">19g</span>
+                                <span class="category">carb</span>
+                            </div>
+                            <div class="fact">
+                                <span class="value">12g</span>
+                                <span class="category">fat</span>
+                            </div>
+                            <div class="fact">
+                                <span class="value">7g</span>
+                                <span class="category">protein</span>
+                            </div>
+                            <div class="fact">
+                                <span class="value">15g</span>
+                                <span class="category">sugar</span>
+                            </div>
+                            <div class="fact">
+                                <span class="value">3g</span>
+                                <span class="category">fiber</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="modal-mainbar">
+                        <div id="modal-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi
+                        </div>
+                        <div id="modal-shop">
+                            <div id="modal-shop-title">Buy this Bun</div>
+                            <div id="modal-shop-options">
+                                <div id="modal-shop-quantity">
+                                    Quantity
+                                    <div id="shop-quantity-grid">
+                                        <div class="shop-quantity-option">1</div>
+                                        <div class="shop-quantity-option selected">3</div>
+                                        <div class="shop-quantity-option">6</div>
+                                        <div class="shop-quantity-option">12</div>
+                                    </div>
+                                </div>
+                                <div id="modal-shop-glazing">
+                                    Glazing
+                                    <div id="shop-glazing-grid">
+                                        <div class="shop-glazing-option">None</div>
+                                        <div class="shop-glazing-option selected">Double-Chocolate</div>
+                                        <div class="shop-glazing-option">Sugar-Milk</div>
+                                        <div class="shop-glazing-option">Vanilla-Milk</div>
+                                    </div>
+                                </div>
+                                <div id="modal-shop-price">
+                                    Price
+                                    <div id="price-option">$12.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="add-to-cart">Add to Cart</div>
+                <a href="browsepage.html">
+                    <div id="exit">X</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
