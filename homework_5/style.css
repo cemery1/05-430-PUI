@@ -1,29 +1,3 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: teal;
-}
-
-/*********** LAYOUT ************/
-
-#page-container {
-    position: relative;
-}
-
-#content-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-/*********** IMAGES ************/
-
-#background-image {
-    width: 100%;
-    opacity: 0.5;
-}
-
 /*********** HEADER ************/
 
 header {
@@ -33,9 +7,9 @@ header {
 }
 
 header nav {
-    font: 24px 'Roboto', sans-serif;
+    font: 20px 'Roboto', sans-serif;
     text-align: right;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 header a {
@@ -58,12 +32,100 @@ header a:hover {
 }
 
 #title {
-    font: bold italic 64px Palatino, serif;
+    font: bold italic 56px Palatino, serif;
     text-align: left;
     margin-right: 12px;
 }
 
 #subtitle {
-    font: italic 28px Palatino, serif;
+    font: italic 24px Palatino, serif;
     color: #B88F4D;
+}
+
+
+/********** HOMEPAGE ***********/
+
+/****** LAYOUT *******/
+
+#page-container {
+    position: relative;
+}
+
+#content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/****** IMAGES ******/
+
+#background-image {
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+/********* BROWSEPAGE **********/
+
+#browsepage-container {
+    position: relative;
+    background-color: #E6E6E6;
+    height: 600px;
+}
+
+#browsebody-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#image-heading {
+    color: #B88F4D;
+    font: bold italic 32px Palatino, serif;
+    padding: 40px;
+    padding-left: 24px;
+    background-color: blue;
+}
+
+.product-card {
+    height: 100px;
+    margin: 8px;
+    border: 1px solid #55473A;
+    background-color: rgba(222, 202, 136, .4);
+}
+
+.product-card:hover {
+    background-color: rgba(222, 202, 136);
+}
+
+.product-image {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: red;
+}
+
+.product-info {
+    height: 100%;
+    width: 75%;
+    float: right;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.product-name {
+    font: bold 32px 'Roboto', sans-serif;
+    color: #55473A;
+    padding-bottom: 12px;
+}
+
+.product-description {
+    font: italic 16px Palatino, serif;
+    color: #55473A;
+}
+
+.product-link {
+    display: inline-block;
+    width: 48%;
 }
