@@ -70,7 +70,6 @@ header a:hover {
 
 #browsepage-container {
     position: relative;
-    background-color: #E6E6E6;
     height: 600px;
 }
 
@@ -78,6 +77,7 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #E6E6E6;
 }
 
 #image-heading {
@@ -95,15 +95,14 @@ header a:hover {
     background-color: rgba(222, 202, 136, .4);
 }
 
-.product-card:hover {
+.enabled:hover {
     background-color: rgba(222, 202, 136);
 }
 
-.product-image {
+.product-image-container {
     display: inline-block;
     width: 25%;
     height: 100%;
-    background-color: red;
 }
 
 .product-info {
@@ -128,4 +127,183 @@ header a:hover {
 .product-link {
     display: inline-block;
     width: 48%;
+}
+
+
+/********* DETAILPAGE **********/
+
+.disabled {
+    cursor: default;
+}
+
+#background-container {
+    opacity: .5;
+}
+
+#detailpage-container {
+    position: relative;
+}
+
+#modal {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    left: 20%;
+    top: 10%;
+    background-color: #55473A;
+}
+
+#product-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8px;
+    height: 15%;
+    border-bottom: 1px solid #E6E6E6;
+    font: bold 32px 'Roboto', sans-serif;
+    color: #B88F4D;
+}
+
+#modal-sidebar {
+    width: 35%;
+    height: 100%;
+    border-right: 1px solid #E6E6E6;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#product-image,
+#modal-image {
+    width: 100%;
+    height: 100%;
+}
+
+#nutrition-facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.value {
+    font: italic 32px 'Roboto', sans-serif;
+    color: #DEBB5F;
+}
+
+.category {
+    font: 20px 'Roboto', sans-serif;
+    color: #B88F4D;
+}
+
+#modal-content {
+    display: flex;
+}
+
+#modal-mainbar {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#modal-description {
+    height: 35%;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8px;
+    font: italic 16px Palatino, serif;
+    color: #E6E6E6;
+}
+
+#modal-shop-title {
+    padding: 8px;
+}
+
+#modal-shop-title {
+    font: bold 24px 'Roboto', sans-serif;
+    color: #DECA88;
+}
+
+#modal-shop-options {
+    display: flex;
+    padding: 0 8px;
+}
+
+#modal-shop-price,
+#modal-shop-quantity {
+    width: 25%;
+    text-align: center;
+    font: bold 20px 'Roboto', sans-serif;
+    color: #DEBB5F;
+}
+
+#modal-shop-glazing {
+    width: 50%;
+    text-align: center;
+    font: bold 20px 'Roboto', sans-serif;
+    color: #DEBB5F;
+}
+
+#shop-quantity-grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 10%;
+}
+
+#shop-glazing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.shop-quantity-option {
+    width: 50%;
+    background-color: #E6E6E6;
+    border: 1px solid #DEBB5F;
+    font: 16px Palatino, serif;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.shop-glazing-option {
+    background-color: #E6E6E6;
+    border: 1px solid #DEBB5F;
+    font: 16px Palatino, serif;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+#price-option {
+    font: 28px Palatino, serif;
+    padding-top: 20px;
+}
+
+.selected {
+    background-color: #DEBB5F;
+    color: #E6E6E6;
+}
+
+#add-to-cart {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-color: #DECA88;
+    color: #E6E6E6;
+    padding: 8px 12px;
+    font: 20px 'Roboto', sans-serif;
+}
+
+#exit {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    background-color: #DECA88;
+    color: #E6E6E6;
+    padding: 4px 8px;
+    font: 20px 'Roboto', sans-serif;
 }
