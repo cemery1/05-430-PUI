@@ -23,7 +23,7 @@ header a,
 }
 
 #title-accent,
-#current-page {
+.current-page {
     color: #DEBB5F;
 }
 
@@ -163,16 +163,21 @@ header a:hover {
 
 /********* BROWSEPAGE **********/
 
-#browsepage-container {
+#browsepage-container,
+#cartpage-container {
     position: relative;
     height: 600px;
 }
 
-#browsebody-container {
+#browsebody-container,
+#cartbody-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: #E6E6E6;
+}
+
+#browsebody-container {
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #image-heading-container {
@@ -411,4 +416,29 @@ header a:hover {
     color: #E6E6E6;
     padding: 4px 8px;
     font: 20px 'Roboto', sans-serif;
+}
+
+
+/********* CART **********/
+#cart-content-container {
+    width: 75%;
+    padding: 28px 12px 12px 12px;
+}
+
+#cart-image-container {
+    background-color: #DEBB5F;
+    height: 482px;
+    width: 30%;
+}
+
+#cart-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+#cart-title {
+    padding-left: 40px;
+    font: bold italic 40px Palatino, serif;
+    color: #B88F4D
 }
