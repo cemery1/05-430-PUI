@@ -367,21 +367,18 @@ header a:hover {
     padding: 8px 0;
 }
 
-.shop-quantity-option {
-    width: 50%;
-    background-color: #E6E6E6;
-    border: 1px solid #DEBB5F;
-    font: 16px Palatino, serif;
-    padding: 4px;
-    box-sizing: border-box;
-}
-
+.shop-quantity-option,
 .shop-glazing-option {
     background-color: #E6E6E6;
     border: 1px solid #DEBB5F;
     font: 16px Palatino, serif;
     padding: 4px;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.shop-quantity-option {
+    width: 50%;
 }
 
 #price-option {
@@ -403,6 +400,7 @@ header a:hover {
     color: #E6E6E6;
     padding: 8px 12px;
     font: 20px 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
 #exit {

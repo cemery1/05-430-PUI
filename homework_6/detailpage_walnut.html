@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             <nav>
                 <a href="homepage.html">Home</a> |
                 <a href="browsepage.html" id="current-page">Shop</a> |
-                <span class="nav-item">Cart</span> |
+                <span id="nav-cart" class="nav-item">Cart (0)</span> |
                 <span class="nav-item">About</span> |
                 <span class="nav-item">Contact</span>
             </nav>
@@ -140,8 +142,8 @@
                                 <div id="modal-shop-quantity">
                                     Quantity
                                     <div id="shop-quantity-grid">
-                                        <div class="shop-quantity-option">1</div>
-                                        <div class="shop-quantity-option selected">3</div>
+                                        <div id="quantity-selected" class="shop-quantity-option">1</div>
+                                        <div class="shop-quantity-option">3</div>
                                         <div class="shop-quantity-option">6</div>
                                         <div class="shop-quantity-option">12</div>
                                     </div>
@@ -149,8 +151,8 @@
                                 <div id="modal-shop-glazing">
                                     Glazing
                                     <div id="shop-glazing-grid">
-                                        <div class="shop-glazing-option">None</div>
-                                        <div class="shop-glazing-option selected">Double-Chocolate</div>
+                                        <div id="glaze-selected" class="shop-glazing-option">None</div>
+                                        <div class="shop-glazing-option">Double-Chocolate</div>
                                         <div class="shop-glazing-option">Sugar-Milk</div>
                                         <div class="shop-glazing-option">Vanilla-Milk</div>
                                     </div>
