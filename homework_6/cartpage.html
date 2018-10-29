@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="cart.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -28,6 +28,13 @@
         <div id="cartbody-container">
             <div id="cart-content-container">
                 <div id="cart-title">Cart</div>
+                <div id="cart-items-container"></div>
+                <div id="checkout-bar">
+                    <div id="checkout-title" class="checkout-element">Subtotal:</div>
+                    <div id="checkout-price" class="checkout-element">$0.00</div>
+                    <div id="checkout-continue-shopping" class="checkout-element">Continue Shopping</div>
+                    <div id="checkout-proceed" class="checkout-element">Proceed to Checkout</div>
+                </div>
             </div>
             <div id="cart-image-container">
                 <img id="cart-image" src="images/cart.jpg" alt="img not found"/>
