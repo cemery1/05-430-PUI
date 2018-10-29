@@ -299,7 +299,7 @@ header a:hover {
 }
 
 .value {
-    font: italic 32px 'Roboto', sans-serif;
+    font: italic 36px 'Roboto', sans-serif;
     color: #DEBB5F;
 }
 
@@ -471,9 +471,11 @@ header a:hover {
     margin: 4px;
     text-align: center;
     color: #55473A;
+    text-decoration: none;
 }
 
 #checkout-continue-shopping {
+    height: 42px;
     background-color: #DECA88;
     border: 1px solid #55473A;
     font: bold 16px Palatino, serif;

@@ -32,5 +32,7 @@ $(document).ready(function(){
         $("#nav-cart").text("Cart (" + cart.length + ")");
 
         localStorage.setItem("cart", JSON.stringify(cart));
+
+        window.open("browsepage.html", "_self");
     });
 });
