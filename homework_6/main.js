@@ -23,7 +23,7 @@ $(document).ready(function(){
         var selection = {
             quantity: $("#quantity-selected").text(),
             glaze: $("#glaze-selected").text(),
-            price: $("#price-option").text(),
+            price: parseFloat($("#price-option").text().substring(1)),
             name: $("#product-title").text(),
             img: $("#modal-image").attr("src")
         };

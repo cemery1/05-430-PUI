@@ -1,5 +1,19 @@
-function createCartList(items) {
+function createCartList(cart) {
+    $("#nav-cart").text("Cart (" + cart.length + ")");
 
+    var subtotal = cart.reduce(((acc, curr) => acc + curr.price), 0);
+    $("#checkout-price").text("$" + subtotal);
+
+    var cartContainer = $("#cart-items-container");
+    cart.forEach((item, index) => {
+        var cartImageContainer = '<div class="cart-image-container"><img class="cart-image" src=' + item.img + ' alt="img not found"/></div>'
+        var cartItemOptions = '<div class="cart-item-options"><div class="cart-item-price">$' + item.price + '</div><div id="' + index + '" class="remove-item">Remove Item</div><div class="review-details">Review Details</div></div>'
+        var cartItemQuantity = '<div class="cart-item-quantity-container"><div class="cart-item-description">Quantity:</div><div class="cart-item-value">' + item.quantity + '</div></div>'
+        var cartItemGlazing = '<div class="cart-item-glazing-container"><div class="cart-item-description">Glazing:</div><div class="cart-item-value">' + item.glaze + '</div></div>'
+        var cartItemInfo = '<div class="cart-item-info"><div class="cart-item-name">' + item.name + '</div>' + cartItemQuantity + cartItemGlazing + '</div>'
+        var cartItem = '<div class="cart-item">' + cartImageContainer + cartItemOptions + cartItemInfo + '</div>'
+        cartContainer.append(cartItem)
+    });
 };
 
 $(document).ready(function(){
@@ -9,32 +23,18 @@ $(document).ready(function(){
         cart = []
         localStorage.setItem("cart", JSON.stringify(cart));
     }
-    $("#nav-cart").text("Cart (" + cart.length + ")");
 
+    createCartList(cart)
 
-    $(document).on("click", ".shop-glazing-option", function() {
-        $(this).parent().children().removeAttr("id");
-        $(this).attr("id", "glaze-selected")
-    });
+    $(document).on("click", ".remove-item", function() {
+        var index = parseInt($(this).attr("id"));
 
-    $(document).on("click", ".shop-quantity-option", function() {
-        $(this).parent().children().removeAttr("id");
-        $(this).attr("id", "quantity-selected")
-    });
+        cart.splice(index, 1);
 
-    $(document).on("click", "#add-to-cart", function() {
         localStorage.removeItem("cart");
-        var selection = {
-            quantity: $("#quantity-selected").text(),
-            glaze: $("#glaze-selected").text(),
-            price: $("#price-option").text(),
-            name: $("#product-title").text(),
-            img: $("#modal-image").attr("src")
-        };
-        cart.push(selection)
-
-        $("#nav-cart").text("Cart (" + cart.length + ")");
-
         localStorage.setItem("cart", JSON.stringify(cart));
+
+        $("#cart-items-container").empty();
+        createCartList(cart);
     });
 });
