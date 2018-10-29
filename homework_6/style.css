@@ -422,7 +422,7 @@ header a:hover {
 
 /********* CART **********/
 #cart-content-container {
-    height: 440px;
+    height: 610px;
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -431,7 +431,7 @@ header a:hover {
 
 #cart-image-container {
     background-color: #DEBB5F;
-    height: 482px;
+    height: 650px;
     width: 30%;
 }
 
@@ -458,7 +458,7 @@ header a:hover {
 
 #cart-items-container {
     box-sizing: border-box;
-    max-height: 340px;
+    max-height: 500px;
     width: 100%;
     overflow: scroll;
     padding-left: 12px;
